@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "monitoring-app",
+    "probes-app"
+]

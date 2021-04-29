@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: probes-app-config
+data:
+  RUST_LOG: "info"
+  PROBES_APP_SECONDS_TILL_READY: "30"
+  PROBES_APP_SECONDS_TILL_FAULTY: "90"

@@ -1,0 +1,16 @@
+[package]
+name = "monitoring-app"
+version = "0.1.0"
+authors = ["Jil Sahm"]
+edition = "2018"
+
+[dependencies]
+# utils
+clap = "3.0.0-beta.2"
+dotenv = "0.15.0"
+env_logger = "0.8.3"
+log = "0.4.14"
+
+# runtimes
+tokio = { version = "1.5.0", features = ["full"] }
+warp = "0.3"
