@@ -4,7 +4,14 @@
 == About
 Collection of stuff, templates, blueprints, and more I am using to learn and remember the k8 concepts.
 
+== K8 Objects CheatSheet
+
+image:./docs/jsa-k8-cheatsheet.png[K8 Objects CheatSheet]
+
 == Apps
 
 === link:./monitoring-app[monitoring-app]
 Simple application for playing with RBAC access and the k8 api and some Prometheus.
+
+=== link:./probes-app[probes-app]
+Simple application for playing with readyness and liveness probes.
