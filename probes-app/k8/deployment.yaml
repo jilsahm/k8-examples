@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: probes-app-deployment
+  name: probes-app
 spec:
   selector:
     matchLabels:
@@ -13,13 +13,23 @@ spec:
     spec:
       containers:
       - name: probes-app-container
-        image: jsahm/probes-app:latest
+        image: jsahm/probes-app:0.2.0
         envFrom:
           - configMapRef:
               name: probes-app-config
         resources:
           limits:
-            memory: "8Mi"
-            cpu: "5m"
+            memory: "32Mi"
+            cpu: "50m"
         ports:
         - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: "/ready"
+            port: 8080
+          initialDelaySeconds: 20
+        livenessProbe:
+          httpGet:
+            path: "/health"
+            port: 8080
+          initialDelaySeconds: 30
