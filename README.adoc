@@ -10,6 +10,9 @@ image:./docs/jsa-k8-cheatsheet.png[K8 Objects CheatSheet]
 
 == Apps
 
+=== link:./api-gateway-app[api-gateway-app]
+Simple application with a nginx k8 ingress controller setup.
+
 === link:./monitoring-app[monitoring-app]
 Simple application for playing with RBAC access and the k8 api and some Prometheus.
 

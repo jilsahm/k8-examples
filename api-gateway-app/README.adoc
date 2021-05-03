@@ -1,0 +1,5 @@
+= api-gateway-app
+
+A simple k8 API-Gateway setup with a test application.
+
+image:ingress-controller-example.png[K8 Objects]
