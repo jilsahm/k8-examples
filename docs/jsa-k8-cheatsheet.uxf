@@ -28,7 +28,7 @@ fontfamily=Monospaced //possible: SansSerif,Serif,Monospaced
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2058</x>
+      <x>2030</x>
       <y>623</y>
       <w>287</w>
       <h>287</h>
@@ -67,10 +67,10 @@ spec:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1302</x>
-      <y>658</y>
-      <w>294</w>
-      <h>364</h>
+      <x>1260</x>
+      <y>630</y>
+      <w>308</w>
+      <h>406</h>
     </coordinates>
     <panel_attributes>bg=#CCFFCC
 
@@ -106,14 +106,21 @@ spec:
       limits: # maximum resources
         memory: "&lt;ram&gt;"
         cpu: "&lt;cpu&gt;"
-    nodeSelector:
-      &lt;key&gt;: &lt;value&gt; # labels of specific nodes</panel_attributes>
+    volumeMounts:
+    - name: &lt;volumename&gt;
+      mountPath: &lt;where to mount in the container&gt;
+  nodeSelector:
+    &lt;key&gt;: &lt;value&gt; # labels of specific nodes
+  volumes:
+  - name: &lt;volumename&gt;
+    persistentVolumeClaim:
+      claimName: &lt;claimname&gt;</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1687</x>
+      <x>1659</x>
       <y>623</y>
       <w>287</w>
       <h>287</h>
@@ -147,7 +154,7 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1967</x>
+      <x>1939</x>
       <y>756</y>
       <w>105</w>
       <h>28</h>
@@ -159,7 +166,7 @@ creates</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1589</x>
+      <x>1561</x>
       <y>749</y>
       <w>112</w>
       <h>28</h>
@@ -171,7 +178,7 @@ manages</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1239</x>
+      <x>1211</x>
       <y>1127</y>
       <w>322</w>
       <h>315</h>
@@ -213,7 +220,7 @@ spec:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1470</x>
+      <x>1442</x>
       <y>343</y>
       <w>287</w>
       <h>161</h>
@@ -241,7 +248,7 @@ data:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1932</x>
+      <x>1904</x>
       <y>343</y>
       <w>287</w>
       <h>161</h>
@@ -262,7 +269,7 @@ metadata:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1148</x>
+      <x>1120</x>
       <y>364</y>
       <w>287</w>
       <h>140</h>
@@ -287,7 +294,7 @@ data:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2415</x>
+      <x>2387</x>
       <y>518</y>
       <w>287</w>
       <h>147</h>
@@ -312,7 +319,7 @@ metadata:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2555</x>
+      <x>2527</x>
       <y>462</y>
       <w>154</w>
       <h>70</h>
@@ -327,7 +334,7 @@ metadata block
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2415</x>
+      <x>2387</x>
       <y>742</y>
       <w>287</w>
       <h>322</h>
@@ -365,7 +372,7 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2555</x>
+      <x>2527</x>
       <y>658</y>
       <w>56</w>
       <h>98</h>
@@ -377,7 +384,7 @@ limits</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1281</x>
+      <x>1253</x>
       <y>497</y>
       <w>189</w>
       <h>91</h>
@@ -388,7 +395,7 @@ limits</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1449</x>
+      <x>1421</x>
       <y>497</y>
       <w>189</w>
       <h>91</h>
@@ -399,19 +406,19 @@ limits</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1442</x>
+      <x>1414</x>
       <y>567</y>
       <w>84</w>
-      <h>105</h>
+      <h>77</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 injected in</panel_attributes>
-    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1750</x>
+      <x>1722</x>
       <y>434</y>
       <w>196</w>
       <h>28</h>
@@ -424,7 +431,7 @@ store token</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1764</x>
+      <x>1736</x>
       <y>0</y>
       <w>287</w>
       <h>189</h>
@@ -453,7 +460,7 @@ roleRef:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2093</x>
+      <x>2065</x>
       <y>0</y>
       <w>287</w>
       <h>189</h>
@@ -483,7 +490,7 @@ rules:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2065</x>
+      <x>2037</x>
       <y>252</y>
       <w>182</w>
       <h>105</h>
@@ -496,7 +503,7 @@ grant RBAC permissions to
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2065</x>
+      <x>2037</x>
       <y>182</y>
       <w>189</w>
       <h>91</h>
@@ -507,7 +514,7 @@ grant RBAC permissions to
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1897</x>
+      <x>1869</x>
       <y>182</y>
       <w>189</w>
       <h>91</h>
@@ -518,7 +525,7 @@ grant RBAC permissions to
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2737</x>
+      <x>2709</x>
       <y>742</y>
       <w>287</w>
       <h>203</h>
@@ -548,7 +555,7 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2597</x>
+      <x>2569</x>
       <y>658</y>
       <w>301</w>
       <h>98</h>
@@ -560,7 +567,7 @@ limits</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1687</x>
+      <x>1659</x>
       <y>945</y>
       <w>287</w>
       <h>322</h>
@@ -604,7 +611,7 @@ spec:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2058</x>
+      <x>2030</x>
       <y>1036</y>
       <w>287</w>
       <h>259</h>
@@ -642,7 +649,7 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1967</x>
+      <x>1939</x>
       <y>1127</y>
       <w>105</w>
       <h>28</h>
@@ -654,7 +661,7 @@ creates</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1589</x>
+      <x>1561</x>
       <y>945</y>
       <w>112</w>
       <h>210</h>
@@ -666,19 +673,19 @@ runs</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1442</x>
-      <y>1015</y>
+      <x>1414</x>
+      <y>1029</y>
       <w>112</w>
-      <h>126</h>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 makes accessable</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>833</x>
+      <x>805</x>
       <y>1218</y>
       <w>287</w>
       <h>175</h>
@@ -706,7 +713,7 @@ spec:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>833</x>
+      <x>805</x>
       <y>1022</y>
       <w>287</w>
       <h>119</h>
@@ -729,7 +736,7 @@ nginx, Traefik, and others</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>966</x>
+      <x>938</x>
       <y>1134</y>
       <w>70</w>
       <h>98</h>
@@ -741,7 +748,7 @@ fulfills</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1113</x>
+      <x>1085</x>
       <y>1302</y>
       <w>140</w>
       <h>28</h>
@@ -753,7 +760,7 @@ delegates to</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>833</x>
+      <x>805</x>
       <y>1449</y>
       <w>287</w>
       <h>203</h>
@@ -785,7 +792,7 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>966</x>
+      <x>938</x>
       <y>1386</y>
       <w>84</w>
       <h>77</h>
@@ -797,7 +804,7 @@ alternative</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>595</x>
+      <x>567</x>
       <y>658</y>
       <w>364</w>
       <h>301</h>
@@ -838,19 +845,19 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>952</x>
+      <x>924</x>
       <y>840</y>
-      <w>364</w>
+      <w>350</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 guards/allows</panel_attributes>
-    <additional_attributes>500.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>480.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>28</x>
+      <x>0</x>
       <y>245</y>
       <w>364</w>
       <h>259</h>
@@ -887,19 +894,19 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>952</x>
+      <x>924</x>
       <y>539</y>
-      <w>364</w>
+      <w>350</w>
       <h>294</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 mounts</panel_attributes>
-    <additional_attributes>500.0;400.0;70.0;400.0;70.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>480.0;400.0;70.0;400.0;70.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>595</x>
+      <x>567</x>
       <y>385</y>
       <w>364</w>
       <h>231</h>
@@ -933,7 +940,7 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
+      <x>357</x>
       <y>434</y>
       <w>224</w>
       <h>35</h>
@@ -948,7 +955,7 @@ assigned to
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>28</x>
+      <x>0</x>
       <y>546</y>
       <w>364</w>
       <h>161</h>
@@ -975,7 +982,7 @@ provisioner: kubernetes.io/&lt;aws-ebs|gce-pd|...&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
+      <x>357</x>
       <y>441</y>
       <w>140</w>
       <h>238</h>
