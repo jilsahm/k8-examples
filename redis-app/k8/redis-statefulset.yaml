@@ -3,55 +3,47 @@ kind: StatefulSet
 metadata:
   name: redis-cluster
 spec:
+  serviceName: redis-cluster
   replicas: 6
   selector:
     matchLabels:
-      app: redis
-  serviceName: redis-cluster-service
+      app: redis-cluster
   template:
     metadata:
-      name: redis
       labels:
-        app: redis
+        app: redis-cluster
     spec:
-      hostname: redis
-      subdomain: redis-cluster-service
       containers:
       - name: redis
         image: redis:5.0.1-alpine
+        ports:
+        - containerPort: 6379
+          name: client
+        - containerPort: 16379
+          name: gossip
         command: ["/conf/update-node.sh", "redis-server", "/conf/redis.conf"]
         env:
         - name: POD_IP
           valueFrom:
             fieldRef:
-              apiVersion: v1
               fieldPath: status.podIP
-        ports:
-        - name: client
-          containerPort: 6379
-        - name: gossip
-          containerPort: 16379
         volumeMounts:
         - name: conf
           mountPath: /conf
           readOnly: false
         - name: data
           mountPath: /data
-          readOnly: false          
+          readOnly: false
       volumes:
       - name: conf
         configMap:
-          name: redis-cluster-configmap
+          name: redis-cluster
           defaultMode: 0755
   volumeClaimTemplates:
-  - apiVersion: v1
-    kind: PersistentVolumeClaim
-    metadata:
+  - metadata:
       name: data
     spec:
-      accessModes:
-      - ReadWriteOnce
+      accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
           storage: 1Gi
-      storageClassName: data
