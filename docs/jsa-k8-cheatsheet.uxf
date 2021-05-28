@@ -24,14 +24,14 @@ fontfamily=Monospaced //possible: SansSerif,Serif,Monospaced
 
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
-  <zoom_level>10</zoom_level>
+  <zoom_level>5</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2900</x>
-      <y>770</y>
-      <w>410</w>
-      <h>410</h>
+      <x>1450</x>
+      <y>425</y>
+      <w>205</w>
+      <h>205</h>
     </coordinates>
     <panel_attributes>
 Deployment
@@ -67,10 +67,10 @@ spec:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1780</x>
-      <y>900</y>
-      <w>460</w>
-      <h>630</h>
+      <x>890</x>
+      <y>490</y>
+      <w>230</w>
+      <h>315</h>
     </coordinates>
     <panel_attributes>bg=#CCFFCC
 
@@ -125,10 +125,10 @@ spec:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2370</x>
-      <y>890</y>
-      <w>410</w>
-      <h>410</h>
+      <x>1185</x>
+      <y>485</y>
+      <w>205</w>
+      <h>205</h>
     </coordinates>
     <panel_attributes>
 ReplicaSet
@@ -159,10 +159,10 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2770</x>
-      <y>1050</y>
-      <w>150</w>
-      <h>40</h>
+      <x>1385</x>
+      <y>565</y>
+      <w>75</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 creates</panel_attributes>
@@ -171,10 +171,10 @@ creates</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2230</x>
-      <y>1070</y>
-      <w>160</w>
-      <h>40</h>
+      <x>1115</x>
+      <y>575</y>
+      <w>80</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 manages</panel_attributes>
@@ -183,10 +183,10 @@ manages</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1750</x>
-      <y>1610</y>
-      <w>490</w>
-      <h>490</h>
+      <x>875</x>
+      <y>845</y>
+      <w>245</w>
+      <h>245</h>
     </coordinates>
     <panel_attributes>
 Service
@@ -231,10 +231,10 @@ spec:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2060</x>
-      <y>490</y>
-      <w>410</w>
-      <h>230</h>
+      <x>1030</x>
+      <y>285</y>
+      <w>205</w>
+      <h>115</h>
     </coordinates>
     <panel_attributes>
 Secret
@@ -259,10 +259,10 @@ data:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2720</x>
-      <y>490</y>
-      <w>410</w>
-      <h>230</h>
+      <x>1360</x>
+      <y>285</y>
+      <w>205</w>
+      <h>115</h>
     </coordinates>
     <panel_attributes>
 ServiceAccount
@@ -280,10 +280,10 @@ metadata:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1600</x>
-      <y>520</y>
-      <w>410</w>
-      <h>200</h>
+      <x>800</x>
+      <y>300</y>
+      <w>205</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>
 ConfigMap
@@ -305,10 +305,10 @@ data:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3410</x>
-      <y>740</y>
-      <w>410</w>
-      <h>210</h>
+      <x>1735</x>
+      <y>40</y>
+      <w>205</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>
 Namespace
@@ -330,10 +330,10 @@ metadata:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3610</x>
-      <y>660</y>
-      <w>220</w>
-      <h>100</h>
+      <x>1835</x>
+      <y>0</y>
+      <w>110</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=-
 can be referenced by 
@@ -345,10 +345,10 @@ metadata block
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3410</x>
-      <y>1060</y>
-      <w>410</w>
-      <h>460</h>
+      <x>1735</x>
+      <y>200</y>
+      <w>205</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>
 ResourceQuota
@@ -383,10 +383,10 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3610</x>
-      <y>940</y>
-      <w>80</w>
-      <h>140</h>
+      <x>1835</x>
+      <y>140</y>
+      <w>40</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 limits</panel_attributes>
@@ -395,10 +395,10 @@ limits</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1790</x>
-      <y>710</y>
-      <w>270</w>
-      <h>130</h>
+      <x>895</x>
+      <y>395</y>
+      <w>135</w>
+      <h>65</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>250.0;110.0;10.0;110.0;10.0;10.0</additional_attributes>
@@ -406,10 +406,10 @@ limits</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2030</x>
-      <y>710</y>
-      <w>270</w>
-      <h>130</h>
+      <x>1015</x>
+      <y>395</y>
+      <w>135</w>
+      <h>65</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>250.0;10.0;250.0;110.0;10.0;110.0</additional_attributes>
@@ -417,10 +417,10 @@ limits</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2020</x>
-      <y>810</y>
-      <w>120</w>
-      <h>110</h>
+      <x>1010</x>
+      <y>445</y>
+      <w>60</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 injected in</panel_attributes>
@@ -429,10 +429,10 @@ injected in</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2460</x>
-      <y>620</y>
-      <w>280</w>
-      <h>40</h>
+      <x>1230</x>
+      <y>350</y>
+      <w>140</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 creates to 
@@ -442,10 +442,10 @@ store token</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2480</x>
-      <y>0</y>
-      <w>410</w>
-      <h>270</h>
+      <x>1240</x>
+      <y>40</y>
+      <w>205</w>
+      <h>135</h>
     </coordinates>
     <panel_attributes>
 RoleBinding
@@ -471,10 +471,10 @@ roleRef:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2950</x>
-      <y>0</y>
-      <w>410</w>
-      <h>270</h>
+      <x>1475</x>
+      <y>40</y>
+      <w>205</w>
+      <h>135</h>
     </coordinates>
     <panel_attributes>
 Role
@@ -501,10 +501,10 @@ rules:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2910</x>
-      <y>360</y>
-      <w>260</w>
-      <h>150</h>
+      <x>1455</x>
+      <y>220</y>
+      <w>130</w>
+      <h>75</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 grant RBAC permissions to
@@ -514,10 +514,10 @@ grant RBAC permissions to
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2910</x>
-      <y>260</y>
-      <w>270</w>
-      <h>130</h>
+      <x>1455</x>
+      <y>170</y>
+      <w>135</w>
+      <h>65</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>250.0;10.0;250.0;110.0;10.0;110.0</additional_attributes>
@@ -525,10 +525,10 @@ grant RBAC permissions to
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2670</x>
-      <y>260</y>
-      <w>270</w>
-      <h>130</h>
+      <x>1335</x>
+      <y>170</y>
+      <w>135</w>
+      <h>65</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>250.0;110.0;10.0;110.0;10.0;10.0</additional_attributes>
@@ -536,10 +536,10 @@ grant RBAC permissions to
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3870</x>
-      <y>1060</y>
-      <w>410</w>
-      <h>290</h>
+      <x>1965</x>
+      <y>200</y>
+      <w>205</w>
+      <h>135</h>
     </coordinates>
     <panel_attributes>
 LimitRange
@@ -566,10 +566,10 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3670</x>
-      <y>940</y>
-      <w>430</w>
-      <h>140</h>
+      <x>1865</x>
+      <y>140</y>
+      <w>215</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 limits</panel_attributes>
@@ -578,10 +578,10 @@ limits</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2350</x>
-      <y>1530</y>
-      <w>410</w>
-      <h>460</h>
+      <x>1175</x>
+      <y>805</y>
+      <w>205</w>
+      <h>230</h>
     </coordinates>
     <panel_attributes>
 Job
@@ -622,10 +622,10 @@ spec:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2900</x>
-      <y>1660</y>
-      <w>410</w>
-      <h>370</h>
+      <x>1450</x>
+      <y>870</y>
+      <w>205</w>
+      <h>185</h>
     </coordinates>
     <panel_attributes>
 CronJob
@@ -660,10 +660,10 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2750</x>
-      <y>1790</y>
-      <w>170</w>
-      <h>40</h>
+      <x>1375</x>
+      <y>935</y>
+      <w>85</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 creates</panel_attributes>
@@ -672,10 +672,10 @@ creates</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2230</x>
-      <y>1340</y>
-      <w>340</w>
-      <h>210</h>
+      <x>1115</x>
+      <y>710</y>
+      <w>170</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 runs</panel_attributes>
@@ -684,10 +684,10 @@ runs</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2020</x>
-      <y>1520</y>
-      <w>160</w>
-      <h>110</h>
+      <x>1010</x>
+      <y>800</y>
+      <w>80</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 makes accessable</panel_attributes>
@@ -696,10 +696,10 @@ makes accessable</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1150</x>
-      <y>1740</y>
-      <w>410</w>
-      <h>250</h>
+      <x>575</x>
+      <y>910</y>
+      <w>205</w>
+      <h>125</h>
     </coordinates>
     <panel_attributes>
 Ingress
@@ -724,10 +724,10 @@ spec:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1150</x>
-      <y>1460</y>
-      <w>410</w>
-      <h>170</h>
+      <x>575</x>
+      <y>770</y>
+      <w>205</w>
+      <h>85</h>
     </coordinates>
     <panel_attributes>lt=..
 
@@ -747,10 +747,10 @@ nginx, Traefik, and others</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1340</x>
-      <y>1620</y>
-      <w>100</w>
-      <h>140</h>
+      <x>670</x>
+      <y>850</y>
+      <w>50</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 fulfills</panel_attributes>
@@ -759,10 +759,10 @@ fulfills</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1550</x>
-      <y>1860</y>
-      <w>220</w>
-      <h>40</h>
+      <x>775</x>
+      <y>970</y>
+      <w>110</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 delegates to</panel_attributes>
@@ -771,10 +771,10 @@ delegates to</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1150</x>
-      <y>2070</y>
-      <w>410</w>
-      <h>290</h>
+      <x>575</x>
+      <y>1075</y>
+      <w>205</w>
+      <h>145</h>
     </coordinates>
     <panel_attributes>lt=..
 
@@ -803,10 +803,10 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1340</x>
-      <y>1980</y>
-      <w>120</w>
-      <h>110</h>
+      <x>670</x>
+      <y>1030</y>
+      <w>60</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=..
 alternative</panel_attributes>
@@ -815,10 +815,10 @@ alternative</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>810</x>
-      <y>940</y>
-      <w>520</w>
-      <h>430</h>
+      <x>405</x>
+      <y>510</y>
+      <w>260</w>
+      <h>215</h>
     </coordinates>
     <panel_attributes>
 NetworkPolicy
@@ -856,10 +856,10 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1320</x>
-      <y>1200</y>
-      <w>480</w>
-      <h>40</h>
+      <x>660</x>
+      <y>640</y>
+      <w>240</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 guards/allows</panel_attributes>
@@ -869,9 +869,9 @@ guards/allows</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>350</y>
-      <w>520</w>
-      <h>370</h>
+      <y>215</y>
+      <w>260</w>
+      <h>185</h>
     </coordinates>
     <panel_attributes>
 PersistenceVolume
@@ -905,10 +905,10 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1320</x>
-      <y>770</y>
-      <w>480</w>
-      <h>420</h>
+      <x>660</x>
+      <y>425</y>
+      <w>240</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 mounts</panel_attributes>
@@ -917,10 +917,10 @@ mounts</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>810</x>
-      <y>550</y>
-      <w>520</w>
-      <h>330</h>
+      <x>405</x>
+      <y>315</y>
+      <w>260</w>
+      <h>165</h>
     </coordinates>
     <panel_attributes>
 PersistentVolumeClaim
@@ -951,10 +951,10 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
-      <y>620</y>
-      <w>320</w>
-      <h>50</h>
+      <x>255</x>
+      <y>350</y>
+      <w>160</w>
+      <h>25</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m1=1
@@ -967,9 +967,9 @@ assigned to
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>780</y>
-      <w>520</w>
-      <h>230</h>
+      <y>430</y>
+      <w>260</w>
+      <h>115</h>
     </coordinates>
     <panel_attributes>
 StorageClass
@@ -993,10 +993,10 @@ provisioner: kubernetes.io/&lt;aws-ebs|gce-pd|...&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
-      <y>630</y>
-      <w>200</w>
-      <h>340</h>
+      <x>255</x>
+      <y>355</y>
+      <w>100</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=..&gt;
 alternative
@@ -1006,10 +1006,10 @@ alternative
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2900</x>
-      <y>1200</y>
-      <w>410</w>
-      <h>420</h>
+      <x>1450</x>
+      <y>640</y>
+      <w>205</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>
 StatefulSet
@@ -1048,13 +1048,72 @@ spec:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2850</x>
-      <y>1060</y>
-      <w>70</w>
-      <h>410</h>
+      <x>1425</x>
+      <y>570</y>
+      <w>35</w>
+      <h>205</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
     <additional_attributes>10.0;10.0;10.0;390.0;50.0;390.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1735</x>
+      <y>550</y>
+      <w>205</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>
+Deployment
+
+-
+The Horizontal Pod Autoscaler automatically scales 
+the number of Pods in a replication controller, 
+deployment, replica set or stateful set based on 
+observed CPU utilization (or, with custom metrics 
+support, on some other application-provided
+metrics). Note that Horizontal Pod Autoscaling 
+does not apply to objects that can't be scaled, 
+for example, DaemonSets.
+-
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: &lt;scalename&gt;
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: &lt;deploymentname&gt;
+  minReplicas: 1
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 50
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1650</x>
+      <y>590</y>
+      <w>95</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+autoscales</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1650</x>
+      <y>595</y>
+      <w>35</w>
+      <h>185</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;350.0;50.0;350.0;50.0;10.0</additional_attributes>
   </element>
 </diagram>
