@@ -1,6 +1,7 @@
 [workspace]
 members = [
     "monitoring-app",
+    "mqtt-app",
     "probes-app",
     "redis-app"
 ]

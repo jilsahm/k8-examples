@@ -1,0 +1,12 @@
+[package]
+name = "mqtt-app"
+version = "0.1.0"
+authors = ["Jil Sahm"]
+edition = "2018"
+
+[dependencies]
+# utils
+dotenv = "0.15.0"
+env_logger = "0.8.3"
+log = "0.4.14"
+rand = "0.8.3"
