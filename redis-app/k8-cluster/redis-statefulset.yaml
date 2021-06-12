@@ -34,16 +34,27 @@ spec:
         - name: data
           mountPath: /data
           readOnly: false
+        readinessProbe:
+          exec:
+            command: ["/bin/sh", "-c", "redis-cli -h $(hostname) ping"]
+          initialDelaySeconds: 5
+          timeoutSeconds: 5
+        livenessProbe:
+          exec:
+            command: ["/bin/sh", "-c", "redis-cli -h $(hostname) ping"]
+          initialDelaySeconds: 20
       volumes:
       - name: conf
         configMap:
           name: redis-cluster
           defaultMode: 0755
-  volumeClaimTemplates:
-  - metadata:
-      name: data
-    spec:
-      accessModes: [ "ReadWriteOnce" ]
-      resources:
-        requests:
-          storage: 1Gi
+      - name: data
+        emptyDir: {}
+  #volumeClaimTemplates:
+  #- metadata:
+  #    name: data
+  #  spec:
+  #    accessModes: [ "ReadWriteOnce" ]
+  #    resources:
+  #      requests:
+  #        storage: 500Mi

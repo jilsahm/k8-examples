@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-single
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis-single
+  template:    
+    metadata:
+      name: redis-single
+      labels:
+        app: redis-single
+    spec:
+      containers:
+      - name: redis
+        image: redis:5.0.4
+        command:
+          - redis-server
+          - "/redis-master/redis.conf"
+        env:
+        - name: MASTER
+          value: "true"
+        ports:
+        - containerPort: 6379
+        resources:
+          limits:
+            memory: "500Mi"
+            cpu: "0.5"
+        volumeMounts:
+        - mountPath: /redis-master-data
+          name: data
+        - mountPath: /redis-master
+          name: config
+      volumes:
+        - name: data
+          emptyDir: {}
+        - name: config
+          configMap:
+            name: redis-single-config
+            items:
+            - key: redis-config
+              path: redis.conf

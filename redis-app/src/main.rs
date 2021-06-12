@@ -6,9 +6,10 @@ extern crate log;
 fn main() {
     dotenv::dotenv().ok();
     env_logger::init();
-    let address = "redis://172.30.66.90:30001/";
+    let address = "redis://172.22.146.199:30010/";
 
     let client = redis::Client::open(address).unwrap();
+    //let client = redis::cluster::ClusterClient::open(vec!["redis://172.31.144.73:30001/"]).unwrap();
     info!("Redis client open");
 
     let mut con = client.get_connection().unwrap();
